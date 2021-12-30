@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages="com.marondal.ex.*")
+@MapperScan(basePackages="com.enimbe.ex.*")
 public class DatabaseConfig {
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
