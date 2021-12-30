@@ -11,9 +11,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages="com.enimbe.*") // interface(mapper)가 있는 패키지
+@MapperScan(basePackages="com.marondal.ex.*")
 public class DatabaseConfig {
-
 	@Bean
 	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
 		SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
@@ -23,5 +22,6 @@ public class DatabaseConfig {
 		sessionFactory.setMapperLocations(res);
 		
 		return sessionFactory.getObject();
+		
 	}
 }
