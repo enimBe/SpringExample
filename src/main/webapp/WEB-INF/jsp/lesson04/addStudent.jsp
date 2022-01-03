@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원정보 추가</title>
+<title>학생 정보 입력</title>
 
 <!-- bootstrap CDN link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,16 +15,24 @@
   
 </head>
 <body>
+
 	<div class="container">
-		<h1>회원정보 추가</h1>
-		<form method="post" action="/lesson04/ex01/add_user">
-			<label>이름 : </label> <input type="text" class="form-control" name="name">
-			<label>생년월일 : </label> <input type="text" class="form-control" name="yyyymmdd">
-			<label>자기소개 : </label>
-			<textarea rows="10" cols="5" class="form-control" name="introduce"></textarea>
-			<label>이메일 : </label> <input type="text" class="form-control" name ="email">
+		<h1>학생정보 추가</h1>
+		
+		<form method="post" action="/lesson04/ex02/add_student">
+			<label>이름</label>
+			<input type="text" class="form-control" name="name">
+	
+			<label>휴대폰 번호</label>
+			<input type="text" class="form-control" name="phoneNumber">
+	
+			<label>이메일 주소</label>
+			<input type="text" class="form-control" name="email">
 			
-			<input type="submit" value="추가" class="btn btn-success">
+			<label>장래희망</label>
+			<input type="text" class="form-control" name="dreamJob">
+			
+			<button type="submit" class="btn btn-success">추가</button>
 		</form>
 	</div>
 </body>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원정보 추가</title>
+<title>Insert title here</title>
 
 <!-- bootstrap CDN link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,17 +15,15 @@
   
 </head>
 <body>
+	
 	<div class="container">
-		<h1>회원정보 추가</h1>
-		<form method="post" action="/lesson04/ex01/add_user">
-			<label>이름 : </label> <input type="text" class="form-control" name="name">
-			<label>생년월일 : </label> <input type="text" class="form-control" name="yyyymmdd">
-			<label>자기소개 : </label>
-			<textarea rows="10" cols="5" class="form-control" name="introduce"></textarea>
-			<label>이메일 : </label> <input type="text" class="form-control" name ="email">
-			
-			<input type="submit" value="추가" class="btn btn-success">
-		</form>
+		
+		<div>이름</div>
+		<div>서예주</div>
+		
+		<div>휴대폰 번호</div>
+		<div>01010101010</div>
+		
 	</div>
 </body>
 </html>
