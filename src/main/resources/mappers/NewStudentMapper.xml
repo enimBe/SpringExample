@@ -6,7 +6,8 @@
  
  <mapper namespace="com.enimbe.ex.lesson04.dao.NewStudentDAO">
  
- 	<insert id="insertStudent" parameterType="com.enimbe.ex.lesson04.model.NewStudent">
+ 	<insert id="insertStudent" parameterType="com.enimbe.ex.lesson04.model.NewStudent"
+ 	useGeneratedKeys="true" keyProperty="id"> <!-- parameterType이 class형태일 때에만 -->
  		INSERT INTO `new_student`
  		(
  			`name`
@@ -15,7 +16,8 @@
  			, `dreamJob`
  			, `createdAt`
  			, `updatedAt`
- 		) VALUES
+ 		) 
+ 		VALUES
  		(
  			#{name}
  			, #{phoneNumber}
