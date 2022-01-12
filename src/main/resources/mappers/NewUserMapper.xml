@@ -40,4 +40,14 @@
  			`id` = #{id}	
  		
  	</select>
+ 	
+ 	<select id="selectCountName" parameterType="string" resultType="int">
+ 		SELECT
+ 			count(*)
+ 		FROM
+ 			`new_user`
+		 WHERE
+		 	`name` = #{name}	
+ 	</select>
+ 	
  </mapper>
